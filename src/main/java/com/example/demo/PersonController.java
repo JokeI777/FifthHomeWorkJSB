@@ -9,7 +9,7 @@ import javax.validation.Valid;
 
 @Validated
 @RestController
-public class PersonService {
+public class PersonController {
     @PostMapping(value = "/validation")
     public String addPerson(@Valid @RequestBody Person person) {
         return "Person validated";
